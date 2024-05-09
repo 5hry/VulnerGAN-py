@@ -1,37 +1,37 @@
 # Filename: data
-## Description: 存储数据
-    - success.npy NIDS判断正确的异常样本
-    - fail.npy NIDS判断错误的异常样本
-    - epoch=1 使用完整训练数据进行在线训练 每批样本完整训练1次
-    - epoch=5 使用完整训练数据进行在线训练 每批样本完整训练5次
-    - .csv 模型分类结果（标签记录
+## Description: Lưu trữ dữ liệu
+    - success.npy Các mẫu bất thường mà NIDS phát hiện chính xác
+    - fail.npy Các mẫu bất thường mà NIDS phát hiện sai
+    - epoch=1 Huấn luyện trực tuyến với toàn bộ dữ liệu huấn luyện, mỗi lô dữ liệu được huấn luyện đủ 1 lần
+    - epoch=5 Huấn luyện trực tuyến với toàn bộ dữ liệu huấn luyện, mỗi lô dữ liệu được huấn luyện đủ 5 lần
+    - .csv Kết quả phân loại của mô hình (ghi chú nhãn)
 
 # Filename: saved_model
-## Description: 存储训练后的模型
+## Description: Lưu trữ các mô hình đã được huấn luyện
 
 # Filename: .txt
-## Description: 训练过程记录
+## Description: Ghi chú quá trình huấn luyện
 
 # Filename: NIDS_MLP.py / NIDS_DNN.py
 ## Description:
-    - MLP/DNN 模型训练，过程记录，结果保存
+    - Huấn luyện mô hình MLP/DNN, ghi chú quá trình, lưu kết quả
 
 # Filename: test_MLP/DNN_bypass.py
 ## Description:
-    - 测试对抗样本对MLP/DNN的绕过率
+    - Kiểm tra tỷ lệ né tránh của mẫu tấn công đối với MLP/DNN
 
 # Filename: train_NIDS.py
 ## Description:
-    - 其他机器学习模型训练过程
+    - Quá trình huấn luyện các mô hình máy học khác
     -
-    "gnb": GaussianNB,  # 朴素贝叶斯
-    "knn": KNeighborsClassifier,  # k近邻
-    "gbc": GradientBoostingClassifier,  # 梯度提升树
-    "rfc": RandomForestClassifier,  # 随机森林
-    "lr": LinearRegression,  # 线性回归
-    "svc": SVC,  # 支持向量机
-    "dtc": DecisionTreeClassifier  # 决策树
+    "gnb": GaussianNB,  # Gaussian Naive Bayes
+    "knn": KNeighborsClassifier,  # K-nearest neighbors
+    "gbc": GradientBoostingClassifier,  # Gradient Boosting Classifier
+    "rfc": RandomForestClassifier,  # Random Forest Classifier
+    "lr": LinearRegression,  # Linear Regression
+    "svc": SVC,  # Support Vector Classifier
+    "dtc": DecisionTreeClassifier  # Decision Tree Classifier
 
 # Filename: test_bypass.py
 ## Description:
-    - 测试对抗样本对其他模型的绕过率
+    - Kiểm tra tỷ lệ né tránh của mẫu tấn công đối với các mô hình khác

@@ -1,29 +1,29 @@
-# Filename: discriminator
-## Description:
-    - GAN鉴别器模型保存
+# Tên tệp: discriminator
+## Mô tả:
+    - Lưu trữ mô hình của Bộ phân biệt GAN
 
-# Filename: generator
-## Description:
-    - GAN生成器模型保存
+# Tên tệp: generator
+## Mô tả:
+    - Lưu trữ mô hình của Bộ tạo GAN
 
-# Filename: logs_gan
-## Description:
-    - 训练日志
+# Tên tệp: logs_gan
+## Mô tả:
+    - Nhật ký huấn luyện
 
-# Filename: ResFc.py
-## Description:
-    - 残差神经网络 用于生成器G
-    
-# Filename: MLP.py
-## Description:
-    - MLP 用于鉴别器D
+# Tên tệp: ResFc.py
+## Mô tả:
+    - Mạng nơ-ron dư thừa được sử dụng cho Bộ tạo G
 
-# Filename: train_GAN.py
-## Description:
-    - GAN训练
-    - 针对不同模型，使用不同的数据集
-    - 可设定训练次数
+# Tên tệp: MLP.py
+## Mô tả:
+    - MLP được sử dụng cho Bộ phân biệt D
 
-# Filename: generate_adver.py
-## Description:
-    - 使用生成器G对异常流量生成相应对抗样本
+# Tên tệp: train_GAN.py
+## Mô tả:
+    - Huấn luyện GAN
+    - Sử dụng tập dữ liệu khác nhau cho các mô hình khác nhau
+    - Có thể cài đặt số lần huấn luyện
+
+# Tên tệp: generate_adver.py
+## Mô tả:
+    - Sử dụng Bộ tạo G để tạo ra các mẫu phản công tương ứng cho luồng dữ liệu bất thường

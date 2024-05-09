@@ -1,27 +1,27 @@
 # Filename: poisoning_record
 ## Description:
-    - 投毒过程中的训练记录
+    - Ghi chú quá trình huấn luyện trong quá trình pha hoá
 
 # Filename: saved_models
 ## Description:
-    - 投毒过程中的模型保存
+    - Lưu trữ các mô hình trong quá trình pha hoá
 
 # Filename: poisoning_NIDS_MLP/DNN.py
 ## Description:
-    - 对MLP/DNN模型进行投毒并保存相应结果
+    - Pha hoá mô hình MLP/DNN và lưu kết quả tương ứng
 
 # Filename: poisoning_NIDS_MLP/DNN_mse.py
 ## Description:
-    - 对MLP/DNN模型进行投毒并记录训练过程中的MSE值信息
-    - 计算训练过程中的MSE
+    - Pha hoá mô hình MLP/DNN và ghi chú thông tin giá trị MSE trong quá trình huấn luyện
+    - Tính toán giá trị MSE trong quá trình huấn luyện
     - mse = mean_squared_error(target, predicted)
 
 # Filename: unpoisoning_NIDS_MLP/DNN.py
 ## Description:
-    - 对MLP/DNN模型进行正常（非投毒）训练并保存相应结果
+    - Huấn luyện bình thường (không pha hoá) mô hình MLP/DNN và lưu kết quả tương ứng
 
 # Filename: unpoisoning_NIDS_MLP/DNN_mse.py
 ## Description:
-    - 对MLP/DNN模型进行正常训练并记录训练过程中的MSE值信息
-    - 计算训练过程中的MSE
+    - Huấn luyện bình thường (không pha hoá) mô hình MLP/DNN và ghi chú thông tin giá trị MSE trong quá trình huấn luyện
+    - Tính toán giá trị MSE trong quá trình huấn luyện
     - mse = mean_squared_error(target, predicted)
